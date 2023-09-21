@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <style>
+    #conc p {
+      color: black;
+    }
+    #email {
+      height: 80vh;
+      margin-top: 50px;
+      border: 2px solid white;
+      display: flex;
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+    #conc {
+      border: 2px solid black;
+      height: 80vh;
+      width: 30%;
+      background-color: skyblue;
+      border: none;
+    }
+    #conc2 {
+      border: 2px solid black;
+      height: 80vh;
+      width: 70%;
+      color: black;
+      border: none;
+    }
+    #conc p {
+      font-size: 25px;
+      margin-left: 15%;
+      color: white;
+    }
+    #conc img {
+      margin-top: 55px;
+      margin-left: 10px;
+    }
+    #us,
+    #name,
+    #user,
+    #message,
+    #bin3 {
+      color: black;
+      border: none;
+    }
+    #name,
+    #user,
+    #message {
+      border: 2px solid rgba(242, 239, 239, 0.882);
+      background-color: rgba(242, 239, 239, 0.882);
+    }
+    #us {
+      font-size: 40px;
+      margin-left: 30%;
+      margin-top: 55px;
+    }
+    #name {
+      height: 50px;
+      width: 40pc;
+      color: black;
+      font-size: 15px;
+      margin-left: 105px;
+      margin-top: 15px;
+    }
+    #user {
+      height: 50px;
+      width: 40pc;
+      color: black;
+      font-size: 15px;
+      margin-left: 105px;
+      margin-top: 30px;
+    }
+    #message {
+      height: 200px;
+      width: 40pc;
+      color: black;
+      font-size: 25px;
+      margin-left: 105px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    #bin3 {
+      margin-left: 350px;
+      margin-top: 20px;
+      width: 135px;
+      height: 40px;
+      font-size: 20px;
+      color: white;
+      background-color: rgb(24, 180, 241);
+      border: none;
+    }
+    .container2 li:after,
+    .container2 li:before {
+      content: "";
+      position: absolute;
+      display: block;
+      border: 0px solid transparent;
+    }
+    .container2 li:after {
+      width: 0%;
+      height: 80%;
+      border-top: 2px solid #fff;
+      border-bottom: 2px solid #fff;
+      transition: all 0.3s ease;
+    }
+    .container2:before {
+      width: 120%;
+      height: 0%;
+      border-left: 2px solid #fff;
+      border-right: 2px solid #fff;
+      transition: all 0.5s ease;
+    }
+    .container2:hover::before {
+      height: 80%;
+    }
+    
+    .container2:hover::after {
+      width: 120%;
+    }    
+  </style>
+    <div id="email">
+        <div class="conc" id="conc">
+          <img src="email.webp" alt="" />
+          <p>E-mail us from here</p>
+        </div>
+        <form action="/" method="post">
+          <div class="conc" id="conc2">
+            <h1 id="us">CONTACT US</h1>
+            <input type="text" id="name" name="name" placeholder="Your name" />
+            <input type="text" id="user" name="email" placeholder="User Email" />
+            <input type="text" id="message" name="message" placeholder="Message" />
+            <button id="bin3">Send</button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
